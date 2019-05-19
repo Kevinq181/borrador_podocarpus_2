@@ -3,23 +3,24 @@ include('../../adm_header.php');
 ?>
 <main>
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
-	<link href='../adm_birds_css/estiloI.css' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	<link href='../adm_birds_css/insert.css' rel='stylesheet' type='text/css' />
 
 
 	<form class='form' method="post" action="../adm_birds_dll/insertardatos.php" enctype="multipart/form-data">
 		<h2>REGISTRAR ESPECIE</h2>
 		<div class="">
 			<div class="form_item col-12 col-lg-5">
-				<input type="nombre" name="nombre" id="nombre" class="form_input" required>
+				<input type="text" name="nombre" id="nombre" class="form_input" required>
 				<label for="nombre" class="form_label">NOMBRE DE ESPECIE</label>
 			</div>
 			<div class="form_item col-12 col-lg-5">
-				<input type="nombre_cientifico" name="nombre_cientifico" id="nombre_cientifico" class="form_input" required>
+				<input type="text" name="nombre_cientifico" id="nombre_cientifico" class="form_input" required>
 				<label for="nombre_cientifico" class="form_label">NOMBRE CIENTIFICO</label>
 			</div>
 		</div>
 		<div class="form_item col-12 col-lg-5">
-			<input type="habitat" name="habitat" id="habitat" class="form_input" required>
+			<input type="text" name="habitat" id="habitat" class="form_input" required>
 			<label for="habitat" class="form_label">HABITAT</label>
 		</div>
 

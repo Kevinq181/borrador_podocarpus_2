@@ -109,7 +109,7 @@ class clase_mysqli{
 			for ($i=0; $i < $this->numcampos(); $i++) { 
 				echo "<td>".utf8_encode($row[$i])."</td>";
 			}
-			echo "<td><div class='btn_editar'><a href='actualizar.php?id=$row[0]'><i class='icon-mod'> | Editar</i></a></div>
+			echo "<td><div class='btn_editar'><a href='adm_birds_internas/birds_update.php?id_editar=$row[0]'><i class='icon-mod'> | Editar</i></a></div>
                   <div  class='btn_eliminar'><a href='adm_birds_internas/birds_delete.php?id=$row[0]'><i class='icon-eli'> | Eliminar</i></a></div></td>";
 			echo "</tr>";
 		}
