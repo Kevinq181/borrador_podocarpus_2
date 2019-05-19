@@ -109,16 +109,11 @@ class clase_mysqli{
 			for ($i=0; $i < $this->numcampos(); $i++) { 
 				echo "<td>".utf8_encode($row[$i])."</td>";
 			}
-<<<<<<< HEAD
-			echo "<td><div class='btn_editar'><a href='adm_birds_internas/birds_update.php?id_editar=$row[0]'><i class='icon-mod'> | Editar</i></a></div>
-                  <div  class='btn_eliminar'><a href='adm_birds_internas/birds_delete.php?id=$row[0]'><i class='icon-eli'> | Eliminar</i></a></div></td>";
-=======
 			echo "<td><div class='acciones'>
             <div class='btn_ver'><a href='adm_birds_internas/birds_read.php?id=$row[0]'><i class='icon-ver'></i></a></div>
-            <div class='btn_editar'><a href='actualizar.php?id=$row[0]'><i class='icon-mod'></i></a></div>
+            <div class='btn_editar'><a href='adm_birds_internas/birds_update.php?id=$row[0]'><i class='icon-mod'></i></a></div>
             <div  class='btn_eliminar'><a href='adm_birds_internas/birds_delete.php?id=$row[0]'><i class='icon-eli'></i></a></div>
             </div></td>";
->>>>>>> 339aaf99c9d836d8c7c4864e7016f6ab35ca425f
 			echo "</tr>";
 		}
 		echo "</table>";
