@@ -48,27 +48,3 @@ include('../../adm_header.php');
 <?php
 include('../../adm_footer.php');
 ?>
-
-<!--?php
-error_reporting(E_ALL ^ E_NOTICE);
-$miconexion->conectar("localhost", "root", "", "podocarpusdb");
-$foto = $_FILES["imagen"]["name"];
-$ruta = $_FILES["imagen"]["tmp_name"];
-$destino = "imagenes/" . $foto;
-copy($ruta, $destino);
-
-if($miconexion->consulta("INSERT INTO aves (nombre,nombre_c,descripcion,habitat, imagen) VALUES ('$_POST[nombre]', '$_POST[nombre_cientifico]', '$_POST[descripcion]', '$_POST[habitat]','$destino')")==1){
-	include('../adm_birds_dll/insertardatos.php');
-}else{
-	echo '<script>location.href="../adm_birds_internas/insert.php"</script>';
-}
-
-
-
-//mysqli_query($con, "INSERT INTO aves (nombre,nombre_c,descripcion,habitat, imagen) VALUES ('$_POST[nombre]', '$_POST[nombre_cientifico]', '$_POST[descripcion]', '$_POST[habitat]','$destino')");
-//echo '<script>alert("Registrado con exito");</script>';
-//header("Location: ../adm_birds_internas/insert.php");
-//echo '<script>location.href="../adm_birds_internas/insert.php"</script>';
-//mysqli_close($miconexion);
-?>
-

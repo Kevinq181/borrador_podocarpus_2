@@ -14,9 +14,9 @@ if (isset($_FILES['img'])) {
         $miconexion->consulta("INSERT INTO aves (nombre,nombre_c,descripcion,habitat, imagen) VALUES ('$_POST[nombre]', '$_POST[nombre_cientifico]', '$_POST[descripcion]', '$_POST[habitat]','$destino')");
         //$res = mysqli_query($cn, mysqli_query($con, "INSERT INTO aves (nombre,nombre_c,descripcion,habitat, imagen) VALUES ('$_POST[nombre]', '$_POST[nombre_cientifico]', '$_POST[descripcion]', '$_POST[habitat]','$destino')"););
         if ($miconexion) {
-            echo '<script type="text/javascript"> alert("Agregado Correctamente"); window.location="../adm_birds_internas/insert.php";</script>';
+            echo '<script type="text/javascript"> alert("Agregado Correctamente"); window.location="../adm_birds_internas/birds_insert.php";</script>';
         } else {
-            echo '<script type="text/javascript"> alert("Fallido"); window.location="../adm_birds_internas/insert.php";</script>';
+            echo '<script type="text/javascript"> alert("Fallido"); window.location="../adm_birds_internas/birds_insert.php";</script>';
             die("Error" . mysqli_error($miconexion));
         }
     }
