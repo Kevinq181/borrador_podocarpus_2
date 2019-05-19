@@ -1,7 +1,7 @@
 <?php
 include('../../adm_header.php');
 extract($_GET);
-$res = $miconexion->consulta("select * from aves where id=$id_editar");
+$res = $miconexion->consulta("select * from aves where id=$id");
 $lista_e = $miconexion->consulta_lista();
 
 ?>
