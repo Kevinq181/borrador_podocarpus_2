@@ -147,39 +147,104 @@ a {
     text-transform: uppercase;
 }
 
-.table_birds tr .btn_editar a,
+.table_birds tr .btn_ver a, .table_birds tr .btn_editar a,
 .table_birds tr .btn_eliminar a {
     text-decoration: none;
     font-family: 'Varela', sans-serif;
     color: white;
     font-style: normal;
 }
-.icon-mod, .icon-eli{
+.icon-ver, .icon-mod, .icon-eli{
     font-style: normal;
 }
+
+.table_birds tr .btn_ver {
+    position: relative;
+    background: #00BCD4;
+    padding: 1px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.table_birds tr .btn_ver:hover {
+    background: #0097A7;
+    cursor: pointer;
+}
+
 
 .table_birds tr .btn_editar {
     position: relative;
     background: #FFC107;
-    padding: 10px;
+    padding: 1px;
     border-radius: 3px;
-    width: 60%;
-    margin-left: 15%;
+    margin-top: 3px;
+    width: 100%;
 }
 
 .table_birds tr .btn_editar:hover {
     background: #FFA000;
+    cursor: pointer;
 }
 
 .table_birds tr .btn_eliminar {
     background: #F44336;
-    padding: 10px;
+    padding: 1px;
     border-radius: 3px;
-    margin-top: 5px;
-    width: 60%;
-    margin-left: 15%;
+    margin-top: 3px;
+    width: 100%;
 }
 
 .table_birds tr .btn_eliminar:hover {
     background: #D32F2F;
+    cursor: pointer;
+}
+
+/* ------------------------------- READ ------------------------------- */
+
+.titulo_read {
+    font-family: 'Handlee', cursive;
+    background: #2c2c26;
+    font-size: 40px;
+    color: white;
+    height: 10%;
+    width: 45%;
+    margin-left: 30%;
+    margin-top: 2%;
+    padding-top: 1%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+.nombre_read, .nombrec_read, .desc_read, .habitat_read{
+    font-family: 'Handlee', cursive;
+    border-bottom: #03A9F4 1px solid;
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    text-align: center;
+    text-align: justify;
+}
+
+.cont_read, .cont_desc_read{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 58%;
+    margin-left: 40%;
+    text-align: justify;
+    
+}
+
+.cont_desc_read{
+    text-align: justify;
+}
+.nombrec_read{
+
+}
+
+.desc_read{
+
+}
+
+.habitat_read{
+
 }

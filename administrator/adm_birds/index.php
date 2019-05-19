@@ -10,6 +10,7 @@ include('../adm_header.php');
         <h2 class="titulo_modificar">ITEMS DISPONIBLES</h2>
         <section class="area_trabajo1">
             <section class="contenido_mod1">
+               <img src="" alt="">
                 <?php
                 $miconexion->consulta("select id, nombre,nombre_c,habitat from aves");
                 $miconexion->verconsulta_avescrud();
