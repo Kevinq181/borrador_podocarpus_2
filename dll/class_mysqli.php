@@ -121,7 +121,6 @@ class clase_mysqli{
     
     function verconsulta_avesread(){
 		while ($row=mysqli_fetch_array($this->Consulta_ID)) {
-            echo "<img src='aguila.jpg' class='img_read'>";
             echo "<h3 class='nombre_read'>Nombre</h3>";
             echo "<p class='cont_read'>".utf8_encode($row[1])."</p>";
             echo "<h3 class='nombrec_read'>Nombre Científico</h3>";
@@ -130,9 +129,6 @@ class clase_mysqli{
             echo "<p class='cont_read'>".utf8_encode($row[4])."</p>";
             echo "<h3 class='desc_read'>Descripción</h3>";
             echo "<p class='cont_desc_read'>".utf8_encode($row[3])."</p>";
-			/*for ($i=0; $i < $this->numcampos(); $i++) { 
-				echo "<td>".utf8_encode($row[$i])."</td>";
-			}*/
 		}
 		
 	}

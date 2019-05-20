@@ -133,6 +133,7 @@ a {
 .table_birds tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
 /*
 .table_birds tr:hover {
     background-color: rgba(0, 0, 0, 0.3);
@@ -147,14 +148,18 @@ a {
     text-transform: uppercase;
 }
 
-.table_birds tr .btn_ver a, .table_birds tr .btn_editar a,
+.table_birds tr .btn_ver a,
+.table_birds tr .btn_editar a,
 .table_birds tr .btn_eliminar a {
     text-decoration: none;
     font-family: 'Varela', sans-serif;
     color: white;
     font-style: normal;
 }
-.icon-ver, .icon-mod, .icon-eli{
+
+.icon-ver,
+.icon-mod,
+.icon-eli {
     font-style: normal;
 }
 
@@ -215,7 +220,10 @@ a {
     position: absolute;
 }
 
-.nombre_read, .nombrec_read, .desc_read, .habitat_read{
+.nombre_read,
+.nombrec_read,
+.desc_read,
+.habitat_read {
     font-family: 'Handlee', cursive;
     border-bottom: #03A9F4 1px solid;
     width: 20%;
@@ -226,25 +234,23 @@ a {
     text-align: justify;
 }
 
-.cont_read, .cont_desc_read{
+.cont_read,
+.cont_desc_read {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     width: 58%;
     margin-left: 40%;
     text-align: justify;
-    
+
 }
 
-.cont_desc_read{
+.cont_desc_read {
     text-align: justify;
 }
-.nombrec_read{
 
-}
-
-.desc_read{
-
-}
-
-.habitat_read{
-
+.img_read {
+    position: fixed;
+    left: 6%;
+    margin-top: 3%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    
 }
